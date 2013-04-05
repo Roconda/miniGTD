@@ -22,7 +22,6 @@ public class ThoughtItem extends JPanel {
         setLayout(new MigLayout("", "[grow][]", "[]"));
 
         JTextArea label = new JTextArea(thought.getNotes());
-        label.setLineWrap(true);
         label.setCursor(new Cursor(Cursor.HAND_CURSOR));
         label.addMouseListener(new MouseAdapter() {
             @Override
