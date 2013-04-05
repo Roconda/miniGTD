@@ -8,9 +8,11 @@ import controller.Controller;
 import models.Task;
 import models.Thought;
 import net.miginfocom.swing.MigLayout;
+import com.alee.laf.WebLookAndFeel;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
+
 import java.awt.*;
 import java.io.IOException;
 import java.net.URL;
@@ -33,6 +35,7 @@ public class MainWindow extends JFrame {
         setLocationRelativeTo(null);
         setMinimumSize(new Dimension(1000, 700));
         
+        new WebLookAndFeel().install();
         setIconImage( new ImageIcon(getClass().getResource("/resources/icons/to_do_list_cheked_1.png")).getImage());
         
         setLayout(new MigLayout("ins 0, fill, gap 0", "[][grow]", "[grow]"));
